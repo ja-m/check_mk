@@ -70,6 +70,6 @@ curl -F "token=$appToken" \
 -F "title=$title" \
 -F "message=$message" \
 -F "priority=$priority" \
-https://api.pushover.net/1/messages
+https://api.pushover.net/1/messages.json
 
 exit 0
