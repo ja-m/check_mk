@@ -7,6 +7,9 @@
 #	originally by Jedda Wignall
 #	http://jedda.me
 
+#	v1.3.1jm - 22 Oct 2016
+#	Fork by ja-m
+
 #	v1.3.0 - 29 Dec 2013
 #	Initial Check_MK adaptation.
 #	Removing explicit sound settings to favour user preferences in client app.
