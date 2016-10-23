@@ -65,7 +65,7 @@ then
 	message=$hostAlias' is '$hostState$'\n'$hostOutput
 else
 	title="$hostAlias $hostState - $serviceDesc $serviceState"
-	message=$'notifywhat:\n'$notifywhat$'\nService:\n'$serviceDesc$'\n'$serviceState$'\n'$serviceOutput$'\nHost:\n'$hostAlias' is '$hostState$'\n'$hostOutput
+	message=$'Service: '$serviceDesc$'\nState: '$serviceState$'\n'$serviceOutput$'\nHost: '$hostAlias' is '$hostState$'\n'$hostOutput
 fi
 
 curl -F "token=$appToken" \
