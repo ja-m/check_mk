@@ -58,14 +58,14 @@ case "$serviceState" in
 esac
 
 # Check if the service state is set. If not then don't show service details in msg.
-if [[ -z "$NOTIFY_SERVICESTATE" ]]
+if [ "$NOTIFY_WHAT" = "HOST" ]
 then
 	# Service details not set.
 	title="$hostAlias $hostState"
 	message=$hostAlias' is '$hostState$'\n'$hostOutput
 else
 	title="$hostAlias $hostState - $serviceDesc $serviceState"
-	message=$'Service:\n'$serviceDesc$'\n'$serviceState$'\n'$serviceOutput$'\nHost:\n'$hostAlias' is '$hostState$'\n'$hostOutput
+	message=$'notifywhat:\n'$notifywhat$'\nService:\n'$serviceDesc$'\n'$serviceState$'\n'$serviceOutput$'\nHost:\n'$hostAlias' is '$hostState$'\n'$hostOutput
 fi
 
 curl -F "token=$appToken" \
