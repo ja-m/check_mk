@@ -9,6 +9,7 @@
 
 #	v1.3.1jm - 22 Oct 2016
 #	Fork by ja-m
+#       Fix variable problem
 
 #	v1.3.0 - 29 Dec 2013
 #	Initial Check_MK adaptation.
